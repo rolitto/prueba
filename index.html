@@ -6,20 +6,65 @@
 -->
 <html>
 	<head>
-		<title>Valle alto Play</title>
+		<title>Valle Alto Play | ></title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<link rel="stylesheet" href="assets/css/view.css" />
+		<link href="dist/css/lightgallery.css" rel="stylesheet">
+		<link href="assets/css/main.css" rel="stylesheet">
+
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	</head>
 	<body>
-		<div>lorem</div>
+
 		<!-- Header -->
+		<div class="demo-gallery">
+				<ul id="lightgallery" class="list-unstyled row">
+						<li class="col-xs-6 col-sm-4 col-md-3" data-src="images/img1.jpg">
+								<a href="">
+										<img class="img-responsive" src="images/img1_t.jpg">
+								</a>
+						</li>
+						<li class="col-xs-6 col-sm-4 col-md-3" data-src="images/img3.jpg">
+								<a href="">
+										<img class="img-responsive" src="images/img3_t.jpg">
+								</a>
+						</li>
+						<li class="col-xs-6 col-sm-4 col-md-3" data-src="images/img2.jpg">
+								<a href="">
+										<img class="img-responsive" src="images/img2_t.jpg">
+								</a>
+						</li>
+						<li class="col-xs-6 col-sm-4 col-md-3" data-src="images/img4.jpg">
+								<a href="">
+										<img class="img-responsive" src="images/img4_t.jpg">
+								</a>
+						</li>
+						<li class="col-xs-6 col-sm-4 col-md-3" data-src="images/img5.jpg">
+								<a href="">
+										<img class="img-responsive" src="images/img5_t.jpg">
+								</a>
+						</li>
+				</ul>
+		</div>
+
+
 			<header id="header">
 				<h1>Valle Alto Play</h1>
 			</header>
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5&appId=184960844909825";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+			<div class="fb-comments" data-href="http://vallealto-play.com/" data-numposts="2"></div>
 
 		<!-- Signup Form -->
 
@@ -39,6 +84,21 @@
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+			$(document).ready(function(){
+					$('#lightgallery').lightGallery();
+			});
+			</script>
+			<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+			<script src="dist/js/lightgallery.js"></script>
+			<script src="dist/js/lg-fullscreen.js"></script>
+			<script src="dist/js/lg-thumbnail.js"></script>
+			<script src="dist/js/lg-video.js"></script>
+			<script src="dist/js/lg-autoplay.js"></script>
+			<script src="dist/js/lg-zoom.js"></script>
+			<script src="dist/js/lg-hash.js"></script>
+			<script src="dist/js/lg-pager.js"></script>
+			<script src="lib/jquery.mousewheel.min.js"></script>
 
 	</body>
 </html>

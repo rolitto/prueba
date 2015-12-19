@@ -541,7 +541,7 @@
 		}
 
 /* List */
-
+/*
 	ol {
 		list-style: decimal;
 		margin: 0 0 2em 0;
@@ -560,7 +560,7 @@
 
 		ul li {
 			padding-left: 0.5em;
-		}
+		}*/
 
 		ul.icons {
 			cursor: default;
